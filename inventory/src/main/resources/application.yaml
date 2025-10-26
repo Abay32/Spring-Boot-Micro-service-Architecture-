@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: Inventory
+    datasource:
+        url: jdbc:postgresql://localhost:5432/ecommerce_api
+        username: <>
+        password: <>
+    driver-class-name: org.postgresql.Driver
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create-drop #update
+server:
+    port: 8082
