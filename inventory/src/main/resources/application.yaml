@@ -1,0 +1,25 @@
+spring:
+    application:
+        name: inventory
+    datasource:
+        url: jdbc:postgresql://localhost:5432/ecommerce_api
+        username: postgres
+        password: Eneye@chinu1
+    driver-class-name: org.postgresql.Driver
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create-drop #update
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+
+
+
+server:
+    port: 8082
